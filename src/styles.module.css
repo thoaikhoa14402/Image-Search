@@ -1,0 +1,84 @@
+.navbar {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar > .search-bar-section > form {
+  display: flex;
+  background-color: #131921;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.input-search-bar {
+  width: 80%;
+  height: 6rem;
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  outline: nome;
+  border: 2px solid #868e96;
+  font-size: 2rem;
+  font-family: "Montserrat";
+}
+
+.input-search-bar:placeholder-shown {
+}
+
+button.search-btn {
+  font-family: "Montserrat";
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 12rem;
+  height: 5rem;
+  align-self: center;
+  border-radius: 12px;
+  font-size: 2rem;
+  border: 2px solid orange;
+  font-weight: 500;
+}
+
+button.search-btn:hover {
+  background-color: white;
+  color: orange;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.img-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  height: 60rem;
+  cursor: pointer;
+  transition: transform 0.45s ease;
+}
+
+.img-item img {
+  transition: transform 0.45s ease;
+}
+
+.img-item:hover img {
+  transform: scale(1.25);
+}
+
+.img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
